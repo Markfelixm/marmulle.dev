@@ -1,6 +1,6 @@
 module github.com/markfelixm/marmulle.dev
 
-go 1.21.4
+go 1.21
 
 require (
 	github.com/FortAwesome/Font-Awesome v0.0.0-20210316185733-d79d85c3fad8 // indirect
