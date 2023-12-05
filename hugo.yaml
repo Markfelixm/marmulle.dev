@@ -1,5 +1,5 @@
 title: "marmulle.dev"
-baseURL: "https://markfelixm.github.io/marmulle.dev/"
+baseURL: "https://example.com"
 languageCode: "en-US"
 theme: "github.com/kdevo/osprey-delight/v5"
 tags: ["personal", "homepage", "portfolio"]
@@ -20,100 +20,23 @@ module:
 Params:
   author:
     name: "marmulle"
-  description: "marmulle's personal site"
+  description: "personal website"
 
   # logoBig appears at the top of the page. Use a path relative to the assets dir for auto-resizing.
-  logoBig: "osprey-delight.png"
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo site to Pages
+  logoBig: "jetpack.png"
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches:
-      - main
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-# Default to bash
-defaults:
-  run:
-    shell: bash
-
-jobs:
-  # Build job
-  build:
-    runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.120.2
-    steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v3
-      - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Build with Hugo
-        env:
-          # For maximum backward compatibility with Hugo modules
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
-        run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: ./public
-
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
   # logoSmall is the logo that will be shown in the left corner of the nav bar.
   #   Use a path relative to the assets dir for auto-resizing.
-  logoSmall: "favicon.png"
+  logoSmall: "jetpack.png"
 
   # background can optionally be specified as an image layer behind logoBig at the top of the page (parallax effect).
-  #background: "background.jpg"
+  # background: "asteroids.png"
 
   # opengraphImage specifies the image that is shown when previewing the site in a messenger or Google Search.
   opengraphImage: "/images/osprey-delight.png"
 
   # favicon of the site (e.g. smaller version of logoSmall).
-  favicon: "favicon.png"
+  favicon: "jetpack.png"
 
   # theme your site by choosing one of the themes under assets/sass/themes:
   #   - delight is the light version of osprey-delight
@@ -125,7 +48,7 @@ jobs:
   #tagline: "Welcome!"
   # mdTagline can be used instead to specify the tagline in Markdown for more customizability.
   #   Note that {cursor} is a placeholder and will be replaced by the actual cursor HTML when rendering.
-  mdTagline: "# marmulle\n ## machine learning, graphics, {cursor}"
+  mdTagline: "# marmulle\n ## low-level, machine learning, graphics, {cursor}"
 
   # enforceSinglePage will enforce redirection to the baseURL for all sub-directories/-pages.
   #   Example: If you create about.md, Hugo will also create a '/about/index.html' which might not be what you want for a *single* page site.
@@ -133,10 +56,10 @@ jobs:
   enforceSinglePage: false
 
   # copyright flag generates a copyright notice in footer of your site.
-  copyright: true
+  copyright: false
 
   # credit to the theme. If you want to support the theme by please leave this in, it's kept very tiny and short.
-  # credit: true
+  credit: false
 
   ## Social links in footer:
   ##   The type specifies the icon to use. For more information, see:
@@ -145,7 +68,7 @@ jobs:
     # - type: twitter # references the icon to use
     #   url: ""
     - type: linkedin
-      url: "www.linkedin.com/in/markfelixmuller"
+      url: "https://www.linkedin.com/in/markfelixmuller"
     - type: github
       url: "https://github.com/Markfelixm"
     # - type: heart
@@ -158,7 +81,7 @@ jobs:
   ## Additional theme features:
   Feat:
     # ajaxBasin requires Basin setup for a free contact form (see instructions in README).
-    # ajaxBasin: "https://usebasin.com/f/{YOUR-12-CHAR-FORM-KEY-HERE}"
+    ajaxBasin: "https://usebasin.com/f/{YOUR-12-CHAR-FORM-KEY-HERE}"
 
     # useStructuredData for your own https://schema.org/Person (SEO-friendly).
     #   This will be auto-generated dependent on the information you provide in this configuration.
@@ -217,13 +140,13 @@ Menu:
       url: "/#about"
       # weight controls the order of the menu items.
       weight: 1
-    - name: "Work"
-      identifier: gallery
-      url: "/#work"
-      weight: 2
-    - name: "Blog"
+    - name: "Apps"
       identifier: blog
-      url: "/#blog"
+      url: "/#apps"
+      weight: 2
+    - name: "Portfolio"
+      identifier: gallery
+      url: "/#portfolio"
       weight: 3
     - name: "Contact"
       identifier: contact

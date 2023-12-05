@@ -1,11 +1,13 @@
 +++
 title = "About"
-date = "2017-06-27T17:39:21-07:00"
+date = "2023-12-04T17:39:21+02:00"
 draft = false
 +++
 
-Osprey Delight is the free-minded artist's choice for a clutter-free and fast single-page portfolio. 
+I like to code.
 
-It tastes a bit different than [the original great Osprey theme](https://github.com/tomanistor/osprey) and adds awesome new functionality to your Delight.
+I'm currently getting better at it in [Hive Helsinki](https://www.hive.fi/en/).
 
-It's perfectly suited to show off your awesome work! {{< icon "rocket" >}}
+Interested in machine learning and graphics.
+
+Thanks for checking out some of my work! {{< icon "rocket" >}}
