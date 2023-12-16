@@ -33,7 +33,7 @@ Params:
   # background: "asteroids.png"
 
   # opengraphImage specifies the image that is shown when previewing the site in a messenger or Google Search.
-  opengraphImage: "/images/osprey-delight.png"
+  opengraphImage: "jetpack.png"
 
   # favicon of the site (e.g. smaller version of logoSmall).
   favicon: "jetpack.png"
@@ -81,7 +81,7 @@ Params:
   ## Additional theme features:
   Feat:
     # ajaxBasin requires Basin setup for a free contact form (see instructions in README).
-    ajaxBasin: "https://usebasin.com/f/{YOUR-12-CHAR-FORM-KEY-HERE}"
+    ajaxBasin: "https://usebasin.com/f/749f07577fc2"
 
     # useStructuredData for your own https://schema.org/Person (SEO-friendly).
     #   This will be auto-generated dependent on the information you provide in this configuration.
@@ -140,13 +140,13 @@ Menu:
       url: "/#about"
       # weight controls the order of the menu items.
       weight: 1
-    - name: "Apps"
-      identifier: blog
-      url: "/#apps"
+    - name: "App"
+      identifier: app
+      url: "/#app"
       weight: 2
-    - name: "Portfolio"
+    - name: "Links"
       identifier: gallery
-      url: "/#portfolio"
+      url: "/#links"
       weight: 3
     - name: "Contact"
       identifier: contact
