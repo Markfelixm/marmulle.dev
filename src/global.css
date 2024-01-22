@@ -1,0 +1,24 @@
+:root {
+	--brilliant-gold: #FFE175;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: whitesmoke;
+	box-sizing: border-box;
+	font-family: monospace;
+	line-height: 1.7;
+	font-size: 1.125rem;
+}
+section, p {
+	padding-inline-start: 1rem;
+}
+a {
+	color: rgb(82, 169, 140);
+}
+a:visited {
+	color: black;
+}
