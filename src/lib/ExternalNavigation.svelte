@@ -1,6 +1,6 @@
 <script>
 	import github_svg from '$lib/assets/github-mark.svg';
-	import linkedin_png from '$lib/assets/LI-In-Bug.png';
+	import linkedin_png from '$lib/assets/linkedin.webp';
 </script>
 
 <ul class="links">
