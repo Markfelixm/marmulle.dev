@@ -2,6 +2,8 @@
 	<li><a href="#welcome">Welcome</a></li>
 	<li><a href="#about">About</a></li>
 	<li><a href="#mentorship">Mentorship</a></li>
+	<li><a href="#hive">Hive</a></li>
+	<li><a href="#triangle">Triangle</a></li>
 </ul>
 
 <style>

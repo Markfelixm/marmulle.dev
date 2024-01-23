@@ -5,6 +5,7 @@
 	import SchibstedConnect from './SchibstedConnect.svelte';
 	import Intermission from './Intermission.svelte';
 	import Hive from './Hive.svelte';
+	import Triangle from './Triangle.svelte';
 
 	import Filler from './filler.svelte'; // TODO: rm
 </script>
@@ -22,10 +23,7 @@
 		<Intermission />
 		<Hive />
 		<Filler />
-		<section>
-			<h2>content section header</h2>
-			<p>content section paragraph</p>
-		</section>
+		<Triangle />
 		<Filler />
 		<section class="full-width" id="bottom">
 			<a href="#top">to top</a>

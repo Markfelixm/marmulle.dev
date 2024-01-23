@@ -1,5 +1,5 @@
 <section id="hive">
-	<h2>Hive</h2>
+	<h2>HIVE</h2>
 	<p>[WIP: curriculum, community, connections, personal experience]</p>
 </section>
 
