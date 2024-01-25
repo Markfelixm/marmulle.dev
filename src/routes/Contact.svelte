@@ -49,7 +49,7 @@
 				maxlength="64"
 			/>
 			<textarea
-				type="message"
+				type="text"
 				name="message"
 				placeholder="Message (up to 512 characters)"
 				class="message"
