@@ -4,6 +4,7 @@
 	<li><a href="#mentorship">Mentorship</a></li>
 	<li><a href="#hive">Hive</a></li>
 	<li><a href="#triangle">Triangle</a></li>
+	<li><a href="#contact">Contact</a></li>
 </ul>
 
 <style>

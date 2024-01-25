@@ -6,6 +6,7 @@
 	import Intermission from './Intermission.svelte';
 	import Hive from './Hive.svelte';
 	import Triangle from './Triangle.svelte';
+	import Contact from './Contact.svelte';
 
 	import Filler from './filler.svelte'; // TODO: rm
 </script>
@@ -13,9 +14,7 @@
 <div class="view">
 	<Menu />
 	<main class="content-grid">
-		<section class="full-width" id="top">
-			<a href="#bottom">to bottom</a>
-		</section>
+		<a class="full-width" id="top" href="#bottom">to bottom</a>
 		<Welcome />
 		<About />
 		<p>/ WORK IN PROGRESS /</p>
@@ -25,9 +24,8 @@
 		<Filler />
 		<Triangle />
 		<Filler />
-		<section class="full-width" id="bottom">
-			<a href="#top">to top</a>
-		</section>
+		<Contact />
+		<a class="full-width" id="bottom" href="#top">to top</a>
 	</main>
 </div>
 
