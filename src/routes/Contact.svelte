@@ -58,7 +58,7 @@
 				cols="30"
 				rows="10"
 			></textarea>
-			<button type="submit" class="submit">Submit</button>
+			<button type="submit" class="submit">Send</button>
 		</form>
 	{:else if success}
 		<div class="success">
@@ -117,7 +117,7 @@
 		align-items: center;
 	}
 	img {
-		max-width: 640px;
+		max-width: 320px;
 		margin: 2em;
 	}
 </style>
