@@ -54,6 +54,7 @@
 		whitesmoke
 		pink
 		aquamarine
+		(dark aquamarine) rgb(82, 169, 140)
 		(gold) #FFE175
 		darkslategrey
 		black */
