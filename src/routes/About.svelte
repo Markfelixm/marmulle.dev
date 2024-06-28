@@ -2,6 +2,8 @@
 	<h3>ABOUT</h3>
 	<p>
 		I like to code.<br />
+		<a href="web/index.html">godot</a> <br>
+
 		I'm currently getting better at it in
 		<a href="https://www.hive.fi/en" target="_blank" rel="noopener noreferrer">Hive Helsinki.</a>
 		<br />
